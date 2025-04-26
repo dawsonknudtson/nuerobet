@@ -76,6 +76,11 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Separator Line */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="border-t border-gray-900 my-20"></div>
+        </div>
+
         {/* Hero-2 Section */}
         <section className="min-h-screen flex items-center px-6 py-20">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
