@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import landingpage from '../frontend/img/landing-page.png'
@@ -21,7 +22,9 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-3xl font-bold text-gray-900"
           >
-            nuerobet
+            <Link href="/" className="hover:text-gray-700 transition-colors duration-200">
+              nuerobet
+            </Link>
           </motion.h1>
         </header>
 
