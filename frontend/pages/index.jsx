@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import landingpage from '../frontend/img/landing-page.png'
 
 export default function Home() {
   return (
@@ -50,6 +52,39 @@ export default function Home() {
               <button className="bg-gray-900 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors duration-300">
                 Join Waitlist
               </button>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Hero-2 Section */}
+        <section className="min-h-screen flex items-center px-6 py-20">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="space-y-6"
+            >
+              <h2 className="text-5xl md:text-7xl font-bold text-gray-900">
+                Beat the Odds.
+              </h2>
+              <p className="text-xl text-gray-600">
+                Pick a game, get the predictions
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="relative h-[500px] w-full"
+            >
+              <Image
+                src={landingpage}
+                alt="Nuerobet Predictions"
+                fill
+                className="object-contain"
+                priority
+              />
             </motion.div>
           </div>
         </section>
