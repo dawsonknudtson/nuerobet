@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className="relative">
         {/* Header */}
-        <header className="fixed top-0 left-0 w-full p-6 z-50">
+        <header className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center">
           <motion.h1 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -26,6 +26,23 @@ export default function Home() {
               nuerobet
             </Link>
           </motion.h1>
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex gap-4"
+          >
+            <Link href="/login">
+              <button className="px-4 py-2 text-gray-900 hover:text-gray-700 transition-colors duration-200">
+                Login
+              </button>
+            </Link>
+            <Link href="/signup">
+              <button className="px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+                Sign Up
+              </button>
+            </Link>
+          </motion.div>
         </header>
 
         {/* Hero Section */}
