@@ -113,6 +113,15 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="py-8 bg-white border-t border-gray-100">
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-center text-gray-500 text-sm">
+              © {new Date().getFullYear()} Nuerobet. All rights reserved.
+            </p>
+          </div>
+        </footer>
       </main>
     </div>
   )
